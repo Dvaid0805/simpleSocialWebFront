@@ -9,8 +9,8 @@ import Avatar from "@mui/material/Avatar";
 export const SideComments = ({ items }) => {
   return (
     <List>
-      {items.map((obj) => (
-        <React.Fragment key={obj.id}>
+      {items.map((obj, index) => (
+        <React.Fragment key={index}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
               <Avatar alt={obj.user.fullName} src={obj.user.avatarUrl} />
