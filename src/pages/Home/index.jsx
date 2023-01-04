@@ -40,7 +40,7 @@ export const Home = () => {
                 key={index}
                 id={i._id}
                 title={i.title}
-                imageUrl={i.imageUrl ? `http://localhost:4444${i.imageUrl}` : ''}
+                imageUrl={i.imageUrl ? `${process.env.REACT_APP_API_URL}${i.imageUrl}` : ''}
                 user={i.user}
                 createdAt={i.createdAt}
                 viewsCount={i.viewsCount}
